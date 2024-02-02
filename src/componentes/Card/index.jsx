@@ -1,24 +1,13 @@
-import { useState } from 'react';
-import Topo from './componentes/Topo';
-import SecaoBanner from './componentes/SecaoBanner';
-import SecaoExperienciaTrabalho from './componentes/SecaoExperienciaTrabalho';
-import Rodape from './componentes/Rodape';
-import './App.css';
+import "./style.css";
 
-export default function App() {
+export default function Card(props) {
 
-	const [ehTemaEscuro, setTemaEscuro] = useState(false)
-
-  const alterarTema = () => {
-    setTemaEscuro(!ehTemaEscuro)
-  }
-
-  return (
-    <main>
-	    <Topo alterarTema={alterarTema} ehTemaEscuro={ehTemaEscuro}/>
-      <SecaoBanner ehTemaEscuro={ehTemaEscuro}/>
-      <SecaoExperienciaTrabalho ehTemaEscuro={ehTemaEscuro}/>
-      <Rodape ehTemaEscuro={ehTemaEscuro}/>
-		</main>
+  return(
+    <div id="card" className={props.ehTemaEscuro ? 'card-modo-escuro' : 'card-modo-claro'}>
+      <p className="primeiroParagrafo">{props.data}</p>
+      <h4>{props.titulo}</h4>
+      <p className="segundoParagrafo">{props.empresa}</p>
+      <p>{props.paragrafo}</p>
+    </div>
   );
 }
