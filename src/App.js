@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import Topo from './componentes/Topo';
+import SecaoBanner from './componentes/SecaoBanner';
+import SecaoExperienciaTrabalho from './componentes/SecaoExperienciaTrabalho';
+import Rodape from './componentes/Rodape';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Topo />
+      <SecaoBanner />
+      <SecaoExperienciaTrabalho />
+      <Rodape />
+    </main>
   );
 }
 
-export default App;

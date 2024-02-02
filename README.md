@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Projeto Pagina de uma Agencia de Design Digital
+
+O projeto tem como objetivo criar uma página de uma Agência de Design Digital que contenha múltiplos componentes. Ela terá um botão com a capacidade de alterar o tema de todos os seus componentes. Isso será feito utilizando o React JS.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
